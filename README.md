@@ -1,6 +1,9 @@
 # OpenSnow
-Open source global snow extension for Chrome-based browsers
+This is a Chome-based extension that adds live snow particles to your browsing pages.
 
+![Alt Text](https://i.imgur.com/e1690ss.gif)
+
+###### snowstorm.js by http://www.schillmania.com/projects/snowstorm/
 
 Usage
 ----------------------
