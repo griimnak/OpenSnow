@@ -372,7 +372,7 @@ var snowStorm = (function(window, document) {
       this.o.setAttribute('class', storm.className);
     }
     this.o.style.color = storm.snowColor;
-    this.o.style.boxShadow = "0 3px 5px rgba(0, 0, 0, 0.3)";
+    this.o.style.textShadow = "#000 0px 1px 2px";
     this.o.style.position = (fixedForEverything?'fixed':'absolute');
     if (storm.useGPU && features.transform.prop) {
       // GPU-accelerated snow.
