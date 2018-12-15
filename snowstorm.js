@@ -36,7 +36,7 @@ var snowStorm = (function(window, document) {
 
   // --- less-used bits ---
 
-  this.freezeOnBlur = true;       // Only snow when the window is in focus (foreground.) Saves CPU.
+  this.freezeOnBlur = false;       // Only snow when the window is in focus (foreground.) Saves CPU.
   this.flakeLeftOffset = 0;       // Left margin/gutter space on edge of container (eg. browser window.) Bump up these values if seeing horizontal scrollbars.
   this.flakeRightOffset = 0;      // Right margin/gutter space on edge of container
   this.flakeWidth = 8;            // Max pixel width reserved for snow element
@@ -372,7 +372,7 @@ var snowStorm = (function(window, document) {
       this.o.setAttribute('class', storm.className);
     }
     this.o.style.color = storm.snowColor;
-    //this.o.style.boxShadow = "0 3px 5px rgba(0, 0, 0, 0.3)";
+    this.o.style.boxShadow = "0 3px 5px rgba(0, 0, 0, 0.3)";
     this.o.style.position = (fixedForEverything?'fixed':'absolute');
     if (storm.useGPU && features.transform.prop) {
       // GPU-accelerated snow.

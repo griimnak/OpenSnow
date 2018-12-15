@@ -1,13 +1,14 @@
 {
   "manifest_version": 2,
   "name": "OpenSnow",
+  "short_name": "OpenSnow",
   "description": "An open source global snowstorm script.",
-  "version": "1.0",
-  "author" : "griimnak",
+  "version": "1.0.4",
+  "author" : ["griimnak","ByteBest"],
 
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
+      "matches": ["*://*/*"],
       "js": ["script.js", "snowstorm.js"],
       "run_at": "document_idle",
       "all_frames": true
@@ -15,6 +16,6 @@
   ],
 
   "permissions": [
-    "<all_urls>"
+    "activeTab"
   ]
 }
